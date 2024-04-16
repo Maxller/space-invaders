@@ -7,8 +7,16 @@ using namespace ftxui;
 
 int main(int argc, char const *argv[])
 {
-    auto label = text("Hola mundo");
-    auto container = hbox({label});
+    // Vesion 1 del codigo
+    //auto label = text("Hola mundo");
+    //auto container = hbox({label});
+
+    Element container =
+    hbox({
+      text("left")   | border,
+      text("middle") | border | flex,
+      text("right")  | border,
+    });
 
     auto screen = Screen::Create(
         Dimension::Full(),
