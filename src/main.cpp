@@ -4,15 +4,15 @@
 #include <thread>
 #include <ftxui/dom/elements.hpp>
 #include <ftxui/screen/screen.hpp>
-#include <Dibujo.hpp>
+#include <Archivo.hpp>
 
 using namespace std;
 using namespace ftxui;
 
 int main(int argc, char const *argv[])
 {
-    Dibujo dTanque("./assets/images/canon.txt");
-    Dibujo dAlien("./assets/images/alien.txt");
+    Archivo dTanque("./assets/images/canon.txt");
+    Archivo dAlien("./assets/images/alien.txt");
     
     int fotograma = 0;
     
