@@ -23,6 +23,8 @@ public:
         this -> palabra = palabra;
     }
     void Dibujar(ftxui::Screen *Pantalla){
+        this -> posicionX++;
+        this -> posicionY++;
         int posicionPalabraX=0;
         int posicionPalabraY=0;
         for (auto &&letra : palabra)
